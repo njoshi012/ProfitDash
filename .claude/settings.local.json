@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e \"const l = require\\('c:/Users/joshi.neel_oneguardi/ProfitDash/package-lock.json'\\); console.log\\('lockfileVersion:', l.lockfileVersion\\); const vite = l.packages?.['frontend/node_modules/vite'] || l.packages?.['node_modules/vite'] || l.dependencies?.vite; console.log\\('vite entry:', JSON.stringify\\(vite, null, 2\\)\\);\")",
+      "Bash(npm install *)",
+      "Bash(node -e \"const l = require\\('c:/Users/joshi.neel_oneguardi/ProfitDash/frontend/package-lock.json'\\); const vite = l.packages['node_modules/vite']; console.log\\('vite version in frontend lockfile:', vite?.version\\);\")",
+      "Bash(Select-String \"package\")",
+      "Bash(git -C \"c:/Users/joshi.neel_oneguardi/ProfitDash\" log --oneline --name-only -3)",
+      "Bash(git -C \"c:/Users/joshi.neel_oneguardi/ProfitDash\" rm -r --cached node_modules/)",
+      "Bash(git -C \"c:/Users/joshi.neel_oneguardi/ProfitDash\" status --short)",
+      "Bash(git -C \"c:/Users/joshi.neel_oneguardi/ProfitDash\" add .gitignore frontend/package.json frontend/vite.config.js)",
+      "Bash(git -C \"c:/Users/joshi.neel_oneguardi/ProfitDash\" add -u node_modules/)",
+      "Bash(git -C c:/Users/joshi.neel_oneguardi/ProfitDash commit -m ' *)",
+      "Bash(git -C \"c:/Users/joshi.neel_oneguardi/ProfitDash\" reset --soft HEAD~1)",
+      "Bash(git -C c:/Users/joshi.neel_oneguardi/ProfitDash commit .gitignore frontend/package.json frontend/vite.config.js -m ' *)",
+      "Bash(git -C \"c:/Users/joshi.neel_oneguardi/ProfitDash\" log --oneline -5)",
+      "Bash(git -C \"c:/Users/joshi.neel_oneguardi/ProfitDash\" push origin main)",
+      "Bash(node -e \"const l = require\\('c:/Users/joshi.neel_oneguardi/ProfitDash/package-lock.json'\\); const vite = l.packages['node_modules/vite'] || l.packages['frontend/node_modules/vite']; console.log\\('vite:', vite?.version\\);\")",
+      "Bash(npm view *)",
+      "Bash(node -e \"const d=require\\('fs'\\).readFileSync\\('/dev/stdin','utf8'\\); const v=JSON.parse\\(d\\); console.log\\('latest versions:', v.slice\\(-5\\).join\\(', '\\)\\);\")",
+      "Bash(node -e \"const {execSync}=require\\('child_process'\\); const r=execSync\\('npm view @vitejs/plugin-react dist-tags --json', {cwd:'c:/Users/joshi.neel_oneguardi/ProfitDash'}\\); console.log\\(r.toString\\(\\)\\);\")",
+      "Bash(node -e \"const l = require\\('c:/Users/joshi.neel_oneguardi/ProfitDash/package-lock.json'\\); const pkgs = l.packages; const vite = pkgs['node_modules/vite'] || pkgs['frontend/node_modules/vite']; const plugin = pkgs['node_modules/@vitejs/plugin-react'] || pkgs['frontend/node_modules/@vitejs/plugin-react']; console.log\\('vite:', vite?.version\\); console.log\\('@vitejs/plugin-react:', plugin?.version\\);\")",
+      "Bash(git -C \"c:/Users/joshi.neel_oneguardi/ProfitDash\" add frontend/package.json package-lock.json vercel.json)",
+      "Bash(git -C \"c:/Users/joshi.neel_oneguardi/ProfitDash\" diff --cached --name-only)",
+      "Bash(git -C \"c:/Users/joshi.neel_oneguardi/ProfitDash\" status)",
+      "Bash(git -C \"c:/Users/joshi.neel_oneguardi/ProfitDash\" diff HEAD frontend/package.json vercel.json)",
+      "Bash(git -C \"c:/Users/joshi.neel_oneguardi/ProfitDash\" show --stat HEAD)",
+      "Bash(git -C \"c:/Users/joshi.neel_oneguardi/ProfitDash\" show HEAD:frontend/package.json)",
+      "Bash(git -C \"c:/Users/joshi.neel_oneguardi/ProfitDash\" show HEAD:vercel.json)",
+      "Bash(git -C \"c:/Users/joshi.neel_oneguardi/ProfitDash\" log --oneline origin/main..HEAD)",
+      "Bash(git -C \"c:/Users/joshi.neel_oneguardi/ProfitDash\" log --oneline -8)",
+      "Bash(node -e \"const l = require\\('c:/Users/joshi.neel_oneguardi/ProfitDash/package-lock.json'\\); const p = l.packages; const vite = p['node_modules/vite'] || p['frontend/node_modules/vite']; const plugin = p['node_modules/@vitejs/plugin-react'] || p['frontend/node_modules/@vitejs/plugin-react']; console.log\\('vite:', vite?.version, '\\\\n@vitejs/plugin-react:', plugin?.version\\);\")",
+      "Bash(git -C \"c:/Users/joshi.neel_oneguardi/ProfitDash\" add .claude/settings.local.json)"
+    ]
+  }
+}
